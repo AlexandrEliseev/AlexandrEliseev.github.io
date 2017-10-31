@@ -8,9 +8,14 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="scripts/jquery.js"></script>
+	
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+	<link rel="stylesheet" href="css/lightbox.min.css">
 </head>
 <body>
+
+	
+
 	<div class="wrapper">
 		<header>
 			<div class="logo">
@@ -73,8 +78,8 @@
 				<div class="clas">
 					<div class="works">
 						<div class="WorkBlock">
-							<a href="#">
-							<img src="img/portfolio3.png" alt="">
+							<a class="example-image-link" href="img/portfolio3.jpg" data-lightbox="work1">
+				            	<img class="example-image" src="img/portfolio3.jpg">
 								<div class="desc">
 									<h4>Game map "Old Polygon"</h4>
 									<h5>Game design</h5>
@@ -83,8 +88,8 @@
 							</a>
 						</div>
 						<div class="WorkBlock">
-							<a href="#">
-							<img src="img/portfolio1.jpg" alt="">
+							<a class="example-image-link" href="img/portfolio1.jpg" data-lightbox="work2">
+				            	<img class="example-image" src="img/portfolio1.jpg">
 								<div class="desc">
 									<h4>Odin</h4>
 									<h5>Character design</h5>
@@ -93,8 +98,8 @@
 							</a>
 						</div>
 						<div class="WorkBlock">
-							<a href="#">
-							<img src="img/portfolio4.jpg" alt="">
+							<a class="example-image-link" href="img/portfolio4.jpg" data-lightbox="work3">
+				            	<img class="example-image" src="img/portfolio4.jpg">
 								<div class="desc">
 									<h4>bathroom</h4>
 									<h5>3D Graphics</h5>
@@ -103,8 +108,8 @@
 							</a>
 						</div>
 						<div class="WorkBlock">
-							<a href="#">
-							<img src="img/portfolio2.jpg" alt="">
+							<a class="example-image-link" href="img/portfolio2.jpg" data-lightbox="work4">
+				            	<img class="example-image" src="img/portfolio2.jpg">
 								<div class="desc">
 									<h4>Port City mariupol</h4>
 									<h5>3D Graphics</h5>
@@ -113,8 +118,8 @@
 							</a>
 						</div>
 						<div class="WorkBlock">
-							<a href="#">
-							<img src="img/portfolio2.PNG" alt="">
+							<a class="example-image-link" href="img/portfolio2.png" data-lightbox="work5">
+				            	<img class="example-image" src="img/portfolio2.png">
 								<div class="desc">
 									<h4>Game map "Bridge"</h4>
 									<h5>Game design</h5>
@@ -123,8 +128,8 @@
 							</a>
 						</div>
 						<div class="WorkBlock">
-							<a href="#">
-							<img src="img/portfolio.jpg" alt="">
+							<a class="example-image-link" href="img/portfolio.jpg" data-lightbox="work6">
+				            	<img class="example-image" src="img/portfolio.jpg">
 								<div class="desc">
 									<h4>Ofice</h4>
 									<h5>3D Graphics</h5>
@@ -133,8 +138,8 @@
 							</a>
 						</div>
 						<div class="WorkBlock">
-							<a href="#">
-							<img src="img/portfolio1.png" alt="">
+							<a class="example-image-link" href="img/portfolio1.png" data-lightbox="work7">
+				            	<img class="example-image" src="img/portfolio1.png">
 								<div class="desc">
 									<h4>Portfolio site</h4>
 									<h5>Web design</h5>
@@ -143,8 +148,8 @@
 							</a>
 						</div>
 						<div class="WorkBlock">
-							<a href="#">
-							<img src="img/portfolio4.png" alt="">
+							<a class="example-image-link" href="img/portfolio4.png" data-lightbox="work8">
+				            	<img class="example-image" src="img/portfolio4.png">
 								<div class="desc">
 									<h4>Face</h4>
 									<h5>Character design</h5>
@@ -268,6 +273,8 @@
 			</div>
 		</footer>
 	</div>
+
+	<script src="scripts/jquery.js"></script>
 	<script>
 		$(document).ready(function(){
 		$("body").on("click","a", function (event) {
